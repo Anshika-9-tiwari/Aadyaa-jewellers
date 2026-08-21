@@ -6,6 +6,10 @@ import Image from "next/image";
 import { Star, Heart, Plus, ArrowRight } from "lucide-react";
 import SectionHeading from "@/components/shared/SectionHeading";
 
+// ✅ REQUIRED — without these, .slick-list isn't clipped and all slides overflow on mobile
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const products = [
   {
     id: 1,
@@ -89,17 +93,20 @@ export default function BestSellers() {
     speed: 600,
     autoplay: true,
     autoplaySpeed: 3500,
-    slidesToShow: 3,
+    slidesToShow: 3, // desktop default
     slidesToScroll: 1,
     arrows: true,
+    pauseOnHover: true,
+    cssEase: "ease-in-out",
+    // ✅ ordered largest → smallest (correct for react-slick)
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 640, settings: { slidesToShow: 1 } },
+      { breakpoint: 640,  settings: { slidesToShow: 1 } }, // phones
     ],
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-cream">
       <div className="container mx-auto px-4 sm:px-6">
         <SectionHeading
           subtitle="Handpicked For You"

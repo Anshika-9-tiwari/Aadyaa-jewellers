@@ -14,11 +14,11 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
+  { href: "/about", label: "About" },
   { href: "/collections/rings", label: "Rings" },
   { href: "/collections/necklaces", label: "Necklaces" },
   { href: "/collections/earrings", label: "Earrings" },
   { href: "/collections/bracelets", label: "Bracelets" },
-  { href: "/loose-diamonds", label: "Loose Diamonds" },
   { href: "/custom-design", label: "Custom Design" },
   { href: "/contact-us", label: "Contact Us" },
 ];

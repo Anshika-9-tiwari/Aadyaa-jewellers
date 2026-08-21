@@ -7,6 +7,7 @@ import DiamondEducation from "@/components/Home/DiamondEducation";
 import Testimonials from "@/components/Home/Testimonials";
 import Newsletter from "@/components/ui/Newsletter";
 import TrendingCollections from "@/components/Home/TrendingCollections";
+import AboutStory from "@/components/Home/AboutStory";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <HeroSection />
       <StatsBar />
       <FeaturedCollections />
+      <AboutStory />
       <BestSellers />
       <TrendingCollections />
       <DiamondEducation />
