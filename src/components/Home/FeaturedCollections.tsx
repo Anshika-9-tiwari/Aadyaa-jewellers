@@ -17,7 +17,7 @@ const collections = [
     desc: "Elegance for every occasion",
     image: "/images/polki.webp",
     link: "/collections/necklaces",
-  },
+  }, 
   {
     id: 3,
     title: "Loose Diamonds",
